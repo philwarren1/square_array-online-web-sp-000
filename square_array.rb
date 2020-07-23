@@ -1,11 +1,8 @@
 def square_array(array)
-  array = [1,2,3,4,5]
-  array.each do |array|
-    return array*2
-  end
+  new_array = []
+  array.each{|a| new_array.push(a*a)}
+  return new_array
 end
 
-primary_colors = ["Red", "Yellow", "Blue"]
-primary_colors.each do |color|
-  puts "Primary Color #{color} is #{color.length} letters long."
-end
+array = [1, 2, 3, 4, 5]
+square_array(arr)
